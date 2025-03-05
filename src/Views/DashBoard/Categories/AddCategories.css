@@ -1,0 +1,126 @@
+.ac-appc {
+  display: flex;
+}
+
+.ac-main-content {
+  padding-top: 100px !important;
+  flex: 1;
+  background-color: #f5f6fa;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.ac-main-content h3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  margin: 20px 10px 10px -5px;
+  padding: 0 15px;
+  font-weight: 700;
+  line-height: 1.2;
+
+}
+
+.ac-contbox {
+  background: white;
+  border-radius: 15px;
+  padding-top: 5px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px !important;
+}
+
+.ac-form-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ac-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ac-col-md-6 {
+  flex: 1;
+  min-width: 200px;
+}
+
+.ac-col-md-12 {
+  width: 100%;
+}
+
+.ac-labelStyle {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+.ac-col-md-6 input{
+  padding: 10px 20px !important;
+  width: 100% !important;
+  font-size: 16px !important;
+  font-weight: 200 !important;
+  display: block;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  border: 1px solid rgb(229, 231, 235) !important;
+  border-radius: 14px !important;
+}
+
+.ac-btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.ac-sbmt,
+.ac-back-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.ac-sbmt {
+  background-color: #5b5ff3;
+  color: white;
+}
+
+.ac-sbmt:hover {
+  background-color: #4a4fcf;
+}
+
+.ac-back-btn {
+  background-color: #5b5ff3;
+  color: white;
+}
+
+.ac-back-btn:hover {
+  background-color: #4a4fcf;
+}
+
+.ac-main-content footer {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .ac-col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+padding-bottom: 0; 
+ }
+  .ac-col-md-6 input {
+    width: 100% !important;
+    display: block;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 750px) {
+  .ac-main-content {
+    padding-top: 100px !important;
+  }
+}

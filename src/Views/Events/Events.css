@@ -1,0 +1,120 @@
+/* General Styles */
+.container {
+  max-width: 55%;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Page Header */
+.rodhdr {
+  /* text-align: center; */
+  margin-bottom: 30px;
+}
+
+.rodhdr h1 {
+  font-weight: 800;
+  font-size: 32px;
+  padding-top: 20px !important;
+  margin-bottom: 20px;
+}
+
+/* Tabs Navigation */
+.nav-tabs {
+  display: flex;
+  /* justify-content: center; */
+  border-bottom: 2px solid rgb(32, 121, 172) !important;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.nav-link.active {
+  background-image: linear-gradient(to right bottom, rgb(32, 121, 172), rgb(12, 74, 110)) !important;
+  border-top-left-radius: 10px !important;
+  border: 0px !important;
+  margin-right: 10px;
+  border-top-right-radius: 10px !important;
+  padding: 12px 25px 12px;
+  color: #fff !important;
+}
+
+/* Events Container */
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rwarwhite  {
+  background-color: #fff;
+  padding: 15px 15px 10px;
+  margin-bottom: 15px !important;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* .rwarwhite:hover {
+  transform: scale(1.02);
+} */
+
+.rwarwhite  h2 {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 5px;
+  color: rgb(33, 37, 41);
+  margin-top: 0px;
+}
+
+.rwarwhite p {
+  font-size: 15px;
+    margin-bottom: 5px;
+    color: rgb(75, 85, 99);
+    margin-top: 0px;
+}
+
+.tabliting .tab-content .rwarwhite {
+  background-color: #fff;
+  padding: 15px 15px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rodhdr h1 {
+    font-size: 2rem;
+  }
+
+  .rwarwhite h2 {
+    font-size: 1.5rem;
+  }
+
+  .rwarwhite p {
+    font-size: 1rem;
+  }
+}

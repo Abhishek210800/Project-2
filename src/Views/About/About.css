@@ -1,0 +1,131 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .page-content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .content-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  
+  .back-link-wrapper {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .About-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #494646;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .back-link:hover {
+    color: #555;
+  }
+  
+  .content-box {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .content h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 25px 0 15px;
+    color: rgb(12, 74, 110);
+  }
+  
+  .content p {
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: rgb(75, 85, 99);
+    margin-bottom: 1rem;
+  }
+  
+  .service-list {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 15px 0;
+  }
+  
+  .service-list li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  
+  .email-link {
+    color: #0c4a6e;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .email-link:hover {
+    color: #0369a1;
+    text-decoration: underline;
+  }
+  
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  @media (max-width: 992px) {
+    .content-container {
+      max-width: 100%;
+    }
+    .content-box {
+      padding: 25px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page-content {
+      padding: 15px;
+      margin-top: 15px;
+    }
+    .content-box {
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .back-link-wrapper {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-box {
+      padding: 15px;
+    }
+    .back-link {
+      font-size: 0.85rem;
+    }
+  }
+  

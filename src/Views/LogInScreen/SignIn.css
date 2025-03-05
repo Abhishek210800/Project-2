@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-image-container {
+  width: 59.5%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-container {
+  width: 40.5%;
+  height: 100vh;
+  background: url("./Images/login_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transform: translateY(-30px);
+}
+
+.alert-container {
+  background-color: rgba(248, 31, 88, 0.8);
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.alert-container p{
+  margin-top: 0;
+  margin-bottom: 0rem !important;
+  color: #ffff;
+}
+
+.image-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-image {
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transform: translateY(-10px);
+}
+
+.card-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1f2937;
+  white-space: nowrap;
+  text-transform: none;
+  text-align: left;
+  padding-top: 5px;
+}
+
+.card-subtitle {
+  font-size: 15px;
+  color: #898989;
+  font-weight: 500;
+  white-space: nowrap;
+  text-transform: none;
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+
+.form-input {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input {
+  flex-grow: 1;
+  padding-right: 3.5rem;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #6366f1;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.forgot-link {
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 100%;
+  height: 45px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #4f46e5;
+}
+
+@media (max-width: 1200px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .login-image-container {
+    display: none;
+  }
+  .right-container {
+    width: 100%;
+    height: 100vh;
+    background: url("./Images/3.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  .content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+  }
+  .form-card {
+    margin: 0 auto;
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-title {
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: normal;
+  }
+  .card-subtitle {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 0;
+    white-space: normal;
+  }
+}

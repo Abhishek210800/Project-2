@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  padding-top: 80px;
+  background: radial-gradient(
+      68.44% 68.44% at 11.68% 128.18%,
+      rgba(31, 228, 160, 0.19) 0,
+      rgba(32, 228, 157, 0) 100%
+    ),
+    radial-gradient(
+      62.06% 62.06% at 56.94% 1.01%,
+      rgba(33, 159, 248, 0.04) 0,
+      rgba(30, 159, 252, 0) 100%
+    ),
+    radial-gradient(
+      25.75% 98.99% at 94.13% 88.82%,
+      rgba(181, 44, 232, 0.2) 0,
+      rgba(176, 36, 227, 0) 100%
+    ),
+    linear-gradient(
+      256.1deg,
+      #f8f5f5,
+      #d5ebf9 22.92%,
+      #d5e9f587 38.54%,
+      #fbf9e8 73.96%,
+      #f0eded
+    ),
+    radial-gradient(112% 112% at 50% -8.08%, #fff 0, #e4f1fe 100%);
+}
+
+.navbar {
+  background: #fff !important;
+  box-shadow: rgba(0, 0, 0, 0) 0 0 0 0,
+              rgba(0, 0, 0, 0) 0 0 0 0,
+              rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
+              rgba(0, 0, 0, 0.1) 0 2px 4px -2px;
+}
+
+.navbar .navbar-brand img {
+  margin-right: 8px;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  color: #111;
+  font-size: 19px;
+}
+
+.navbar .navbar-brand:hover {
+  color: rgb(12, 74, 110);
+}
+
+.mnhdr {
+  text-align: center;
+}
+.mnhdr h1 {
+  font-size: 45px;
+  font-weight: 900;
+  margin: 20px 0 7px;
+  padding-top: 100px;
+}
+.mnhdr h2 {
+  font-size: 19px;
+  font-weight: 400;
+  margin: 10px 0 30px;
+  padding: 0;
+}
+
+.continner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.serchdsgn {
+  margin: 40px auto 10px;
+  max-width: 500px;
+}
+.serchdsgn input {
+  border: 2px solid rgb(209, 213, 219);
+  border-radius: 50px;
+  color: #111 !important;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+.serchdsgn button {
+  padding: 0;
+  margin: -34px 23px 0 0;
+  background: transparent;
+  border: 0;
+  color: rgb(12, 74, 110);
+  float: right;
+}
+.dropdown-item {
+  font-size: 14px !important;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+/* Global responsive rules */
+@media screen and (max-width: 992px) {
+  .container,
+  .continner {
+    width: 95%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+  .container,
+  .continner {
+    width: 100%;
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .serchdsgn input {
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+}

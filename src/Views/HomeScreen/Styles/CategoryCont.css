@@ -1,0 +1,131 @@
+.category-cont-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.category-cont-fltrlbox {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),
+              0 4px 6px -4px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 25px;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.category-cont-header {
+  color: rgb(31, 41, 55);
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.category-cont-shrbg {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.category-cont-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+  font-size: 18px;
+}
+
+.category-cont-snglbox {
+  width: 100%;
+  padding-left: 40px !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.category-cont-bxdscrl {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+}
+
+.category-cont-contnr {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+.category-cont-contnr input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.category-cont-checkmk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #fff;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 4px;
+}
+
+.category-cont-contnr input:checked ~ .category-cont-checkmk {
+  background-color: #fff;
+}
+
+.category-cont-checkmk:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.category-cont-contnr input:checked ~ .category-cont-checkmk:after {
+  display: block;
+}
+
+.category-cont-checkmk:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(107, 114, 128);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.category-cont-postl {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgb(159, 159, 159);
+  margin-left: 4px;
+}
+
+.category-cont-smlhdr {
+  display: block;
+  margin-top: 30px;
+  font-size: 15px;
+  color: rgb(75, 85, 99);
+}
+
+@media screen and (max-width: 768px) {
+  .category-cont-container {
+    padding: 10px;
+  }
+}

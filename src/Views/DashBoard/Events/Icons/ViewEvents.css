@@ -1,0 +1,91 @@
+.ve-app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.ve-main-content {
+  flex: 1;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  padding: 20px;
+  margin-left: 0; /* Removes the extra left gap */
+  margin-top: 20px; /* Adds a gap from the top */
+}
+
+
+.ve-header {
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.ve-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ve-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.ve-detail-row {
+  margin-bottom: 15px;
+}
+
+.ve-detail-row label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.ve-display-field {
+  font-size: 14px;
+  color: #333;
+}
+
+.ve-button-row {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.ve-back-button {
+  background-color: #5b5ff3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.ve-back-button:hover {
+  background-color: #4a4fcf;
+}
+
+.ve-loading, .ve-error {
+  padding: 20px;
+  text-align: center;
+  color: red;
+}
+
+.ve-event-image {
+  max-width: 200px;
+  height: auto;
+}
+.ve-main-content footer {
+  margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .ve-main-content {
+    margin-left: 0;
+  }
+}

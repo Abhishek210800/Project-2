@@ -1,0 +1,154 @@
+/* Add to existing styles */
+
+.dc-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+}
+
+.dc-loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Rest of the styles as you already have */
+
+.dc-appk {
+  display: flex;
+  height: 100vh;
+}
+
+.dc-main-content {
+  background-color: #f5f6fa;
+  padding: 20px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dc-edit-company-header {
+  margin-top: 10px;
+  padding: 60px 20px 20px 20px;
+}
+
+.dc-edit-company-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dc-edit-company-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.dc-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.dc-form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  margin-bottom: 15px;
+}
+
+.dc-form-group label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dc-form-group input,
+.dc-form-group textarea,
+.dc-form-group select {
+  font-size: 16px;
+  color: #333;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dc-form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-control {
+  font-size: 16px;
+  color: #333;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nopadfile {
+  padding: 12px 10px;
+}
+
+.text-red-500 {
+  color: #f56565;
+}
+
+.dc-button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.dc-edit-button,
+.dc-back-button {
+  padding: 10px 20px;
+  background-color: #5b5ff3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.dc-edit-button:hover,
+.dc-back-button:hover {
+  background-color: #4a4fcf;
+}
+.dc-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3498db;
+}

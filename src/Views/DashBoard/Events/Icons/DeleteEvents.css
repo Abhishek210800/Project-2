@@ -1,0 +1,92 @@
+.de-app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.de-main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f5f6fa;
+  padding: 20px;
+  margin-left: 0;    
+  margin-top: 40px;   
+}
+
+.de-header {
+  padding: 70px 0 20px; 
+}
+
+.de-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.de-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.de-event-details {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.de-button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.de-confirm-button {
+  background-color: #e74c3c; 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.de-confirm-button:hover {
+  background-color: #c0392b;
+}
+
+.de-cancel-button {
+  background-color: #5b5ff3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.de-cancel-button:hover {
+  background-color: #4a4fcf;
+}
+
+.de-loading,
+.de-error {
+  padding: 20px;
+  text-align: center;
+  color: red;
+}
+
+.de-main-content footer {
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  .de-main-content {
+      margin-left: 0;
+  }
+}

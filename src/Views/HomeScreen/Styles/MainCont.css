@@ -1,0 +1,23 @@
+.main-cont-container {
+  display: flex;
+  gap: 5px;
+  margin: 3rem 0;
+}
+
+.main-cont-category {
+  width: 25%;
+}
+
+.main-cont-company {
+  width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .main-cont-container {
+    flex-direction: column;
+  }
+  .main-cont-category,
+  .main-cont-company {
+    width: 100%;
+  }
+}

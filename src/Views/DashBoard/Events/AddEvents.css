@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .ae-app {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .ae-main-content {
+    flex: 1;
+    background: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .ae-form-title-top {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 70px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+  }
+  
+  .ae-contbox {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .ae-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  
+  .ae-col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  .ae-labelStyle {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: rgb(51, 49, 49);
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .ae-asterisk {
+    color: #000;
+  }
+  
+  input[type="text"],
+  input[type="file"],
+  textarea {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .ae-btn-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .ae-sbmt {
+    background-color: #5b5ff3;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ae-sbmt:hover {
+    background-color: #4a4fcf;
+  }
+  
+  .ae-back-btn {
+    background-color: #5b5ff3;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ae-back-btn:hover {
+    background-color: #4a4fcf;
+  }
+  
+  @media (max-width: 480px) {
+    input[type="text"],
+    input[type="file"],
+    textarea {
+      font-size: 14px;
+      padding: 8px;
+    }
+    .ae-labelStyle {
+      font-size: 14px;
+    }
+  }
+  

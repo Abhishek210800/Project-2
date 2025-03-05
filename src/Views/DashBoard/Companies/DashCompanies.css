@@ -1,0 +1,512 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dc-companies-text-header {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dc-companies-header {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.dc-companies-header h3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  margin: 20px 10px 10px -15px;
+  padding: 0 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+  .dc-companies-header {
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+.dc-add-new-button {
+  margin: 25px 30px 10px 10px;
+  display: inline-block;
+  background-color: #5c61f2 !important;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1.5;
+  text-decoration: none !important;
+}
+
+.dc-add-new-button:hover {
+  background-color: #4a4fcf;
+}
+
+.dc-appk {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dc-main-content {
+  flex: 1;
+  background-color: #f5f6fa;
+  padding: 20px;
+  overflow-x: hidden;
+  margin-bottom: 250px !important;
+}
+
+.dc-add-companies-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  margin-bottom: 25px;
+}
+
+.dc-add-companies-header {
+  padding-top: 10px !important;
+  padding-bottom: 5px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.dc-search-and-entries {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dc-show-entries {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 0;
+  font-size: 14px;
+}
+
+.dc-show-entries select {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+
+.dc-search {
+  flex: 1;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.dc-search input {
+  width: 100%;
+  height: 35px !important;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px !important;
+  font-size: 10px;
+}
+
+.dc-table-responsive {
+  margin-top: 10px;
+}
+
+.dc-add-companies-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  /* border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; */
+}
+
+.dc-table-header-row {
+  display: block;
+  background-color: #6d65851a;
+  border-radius: 0;
+  padding: 8px 15px;
+  box-shadow: #ccc;
+}
+
+.dc-table-header-row th {
+  display: inline-block;
+  font-size: 16px;
+  color: #494953;
+  text-align: left;
+  padding-left: 20px !important;
+}
+
+/* Ensure Contact Person header is centered */
+.dc-table-header-row th.dc-column-contact {
+  white-space: nowrap;
+  padding-top: 8px !important;
+  padding-bottom: 5px;
+  text-align: center !important;
+}
+
+.dc-add-companies-table th {
+  display: none;
+}
+
+.dc-add-companies-table tr {
+  display: block;
+  padding: 0.05rem 0;
+  border-bottom: 2px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.dc-add-companies-table td {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 6px 8px;
+  position: relative;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.dc-add-companies-table td.loading-cell,
+.dc-add-companies-table td.no-data-cell {
+  justify-content: center;
+  padding-left: 0;
+  padding: 15px 0;
+}
+
+.dc-add-companies-table td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 0;
+  width: 45%;
+  padding-right: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Logo column styling (keeps the original width set by the header, while centering the image) */
+.dc-column-logo {
+  /* Do not force a width here; let the table header define it */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dc-column-details {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dc-company-name {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.dc-company-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.dc-column-contact {
+  vertical-align: top !important;
+  padding-top: 0 !important;
+  align-items: flex-start !important;
+}
+
+.dc-contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding-top: 10px;
+  width: 100%;
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+.dc-contact-person {
+  font-weight: 400;
+  margin: 0;
+  color: #333;
+  line-height: 1.2;
+  text-align: left !important;
+  width: 100%;
+}
+
+.dc-designation {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.2;
+  text-align: left !important;
+  width: 100%;
+}
+
+.dc-column-services {
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Ensure Services cells start from top left */
+.dc-add-companies-table td.dc-column-services {
+  vertical-align: top !important;
+  text-align: left !important;
+}
+
+.dc-services {
+  font-size: 14px;
+  color: #333;
+  word-break: break-word;
+  text-align: left;
+  margin: 0;
+}
+
+.dc-column-actions {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.dc-action-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.dc-action-icons button {
+  background: none;
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.dc-action-icons button:hover {
+  transform: scale(1.05);
+}
+
+.dc-edit-icon {
+  color: #4caf50;
+}
+
+.dc-view-icon {
+  color: #2196f3;
+}
+
+.dc-delete-icon {
+  color: #f44336;
+}
+
+.dc-pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.dc-pagination-button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  color: #333;
+}
+
+.dc-pagination-button.dc-active {
+  background-color: #5b5ff3;
+  color: white;
+  border: none;
+}
+
+.dc-pagination-button:hover {
+  background-color: #f0f4ff;
+}
+
+.dc-pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dc-add-companies-table tr:nth-child(odd) td.dc-column-logo,
+.dc-add-companies-table tr:nth-child(odd) td.dc-column-details,
+.dc-add-companies-table tr:nth-child(odd) td.dc-column-contact,
+.dc-add-companies-table tr:nth-child(odd) td.dc-column-actions {
+  background-color: #fafafa;
+}
+
+.dc-add-companies-table tr:nth-child(even) td.dc-column-services {
+  background-color: #fafafa;
+}
+
+.dc-add-companies-table tr:nth-child(odd):hover td.dc-column-logo,
+.dc-add-companies-table tr:nth-child(odd):hover td.dc-column-details,
+.dc-add-companies-table tr:nth-child(odd):hover td.dc-column-contact,
+.dc-add-companies-table tr:nth-child(odd):hover td.dc-column-actions {
+  background-color: #f0f0f0;
+}
+
+.dc-add-companies-table tr:nth-child(even):hover td {
+  background-color: #f0f0f0;
+}
+.dc-add-companies-table tr:nth-child(even):hover td.dc-column-services {
+  background-color: #e8e8e8;
+}
+
+@media (min-width: 768px) {
+  .dc-add-companies-table {
+    display: table;
+  }
+  .dc-add-companies-table th {
+    display: table-cell;
+    background-color: transparent;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #494953;
+  }
+  .dc-add-companies-table tr {
+    display: table-row;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .dc-add-companies-table td {
+    padding: 6px 8px;
+    padding-left: 15px;
+  }
+  .dc-add-companies-table td::before {
+    display: none;
+  }
+  .dc-column-details {
+    min-width: 220px;
+  }
+  .dc-add-companies-table th.dc-column-logo {
+    width: 13%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .dc-add-new-button {
+    width: 100%;
+    text-align: center;
+  }
+  .dc-search-and-entries {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .dc-add-companies-table thead {
+    display: none;
+  }
+  
+  .dc-add-companies-table,
+  .dc-add-companies-table tbody,
+  .dc-add-companies-table th,
+  .dc-add-companies-table td,
+  .dc-add-companies-table tr {
+    display: block;
+  }
+  
+  .dc-add-companies-table tr {
+    border: 1px solid #ddd;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .dc-add-companies-table td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  
+  .dc-add-companies-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 40%;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .dc-column-logo {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .dc-pagination-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .dc-main-content {
+    padding: 10px;
+  }
+  .dc-add-companies-container {
+    padding: 15px;
+  }
+  .dc-add-companies-table tr {
+    padding: 8px;
+  }
+  .dc-add-companies-table td {
+    padding-left: 50%;
+    font-size: 14px;
+  }
+  .dc-add-companies-table td::before {
+    width: 40%;
+  }
+  .dc-company-logo {
+    transform: scale(1);
+  }
+  .dc-action-icons button {
+    font-size: 14px;
+  }
+  .dc-pagination-button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+.imgbox {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+              rgba(12, 74, 110, 0.5) 0px 4px 6px -1px,
+              rgba(12, 74, 110, 0.5) 0px 2px 4px -2px;
+  width: 85px;
+  height: 85px;
+  border-radius: 100px;
+  padding: 4px;
+}
