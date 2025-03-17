@@ -45,7 +45,7 @@ function CompanyDetails() {
       ? error.message || JSON.stringify(error)
       : error;
 
-  if (status === "loading") return <div>Loading...</div>;
+  if (status === "loading") return <div> </div>;
   if (status === "failed" || error) {
     return (
       <div className="cd-main-container">

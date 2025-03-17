@@ -6,10 +6,14 @@ import DashboardNav from "./Components/UpperNav";
 import { fetchCompanies } from "../../Redux/CompaniesSlice";
 import { fetchCategories } from "../../Redux/CategoriesSlice";
 import "./Dashboard.css";
+// import { useLoading } from '../../Context/LoadingContext';
+
 import categorycom from "./Images/category-com.jpg";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
+  // const { contentVisible } = useLoading();
+
 
   const { data: companies } = useSelector((state) => state.companies);
   const { data: categories } = useSelector((state) => state.categories);
@@ -27,6 +31,7 @@ const Dashboard = () => {
   }, [dispatch, categories.length]);
 
   return (
+    
     <div className="app">
       <DashboardSidebar />
       <div className="main-content">
@@ -178,7 +183,6 @@ const Dashboard = () => {
               </div>
               <div
                 className="card-footer categories-footer"
-                
                 style={{
                   backgroundColor: "white",
                   marginTop: "0",
@@ -186,11 +190,11 @@ const Dashboard = () => {
                 }}
               >
                 <img
-                      src={categorycom}
-                      width="100%"
-                      style={{ marginTop: "30px", marginBottom: "30px" }}
-                      alt="Category"
-                    />
+                  src={categorycom}
+                  width="100%"
+                  style={{ marginTop: "30px", marginBottom: "30px" }}
+                  alt="Category"
+                />
                 <ul
                   style={{
                     display: "grid",

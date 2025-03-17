@@ -1,7 +1,9 @@
+// src/Views/LogInScreen/LogIn.js
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../../Redux/AuthSlice";
+import { useLoading } from "../../Context/LoadingContext";
 import "./SignIn.css";
 import loginImage from "./Images/3.jpg";
 import logoImage from "./Images/logo2.png";
@@ -11,11 +13,45 @@ const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showError, setShowError] = useState(false);
+  const [pageLoaded, setPageLoaded] = useState(false);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const { showLoader, hideLoader } = useLoading();
   
   const { user, loading, error } = useSelector((state) => state.auth);
+
+  // Handle initial page load
+  useEffect(() => {
+    // Show loader when component mounts
+    showLoader();
+    
+    // Hide loader when all resources are loaded
+    window.onload = () => {
+      hideLoader();
+      setPageLoaded(true);
+    };
+    
+    // If window.onload doesn't trigger (already loaded), hide after a short delay
+    const timer = setTimeout(() => {
+      hideLoader();
+      setPageLoaded(true);
+    }, 1000);
+    
+    return () => {
+      clearTimeout(timer);
+      window.onload = null;
+    };
+  }, [showLoader, hideLoader]);
+
+  // Handle API loading states
+  useEffect(() => {
+    if (loading && pageLoaded) {
+      showLoader();
+    } else if (!loading && pageLoaded) {
+      hideLoader();
+    }
+  }, [loading, pageLoaded, showLoader, hideLoader]);
 
   useEffect(() => {
     if (user) {

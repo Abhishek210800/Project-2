@@ -179,6 +179,9 @@ const SignUp = () => {
                       <div className="col-md-12 margtptty margbtmtty">
                         <button className="sbmt">Submit</button>
                       </div>
+                      <div className="col-md-12 margtptty margbtmtty">
+                        <button className="sbmt">SignUp with Google</button>
+                      </div>
                     </div>
                   </div>
                 </div>
